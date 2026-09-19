@@ -40,6 +40,8 @@ actualizado con lo nuevo.
 ## 6 · Guiones
 **Criterio por guion:**
 
+- [ ] **Enseña una sola cosa, y al terminar la persona puede hacer algo distinto**
+- [ ] **Incluye una prueba comprobable en menos de 30 segundos**
 - [ ] El hook cabe en 4 segundos y se dice completo, sin cortarlo a media frase
 - [ ] El primer cuadro muestra la situación entera — nunca un saludo
 - [ ] Hay un cambio visual antes del segundo 3

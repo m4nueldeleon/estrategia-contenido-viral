@@ -64,3 +64,15 @@ def tasa(num, den):
     if not den or num is None:
         return None
     return round(num / den * 100, 2)
+
+
+def indice_utilidad(guardados, likes):
+    """Guardados / likes. > 0.40 = la gente lo necesita, no solo le gustó.
+
+    La tasa de compartido premia juegos; esta premia utilidad real.
+    Pool de entretenimiento: 0.05-0.15. Pool de educadores: 0.35-1.14.
+    Ver references/VALOR.md
+    """
+    if not likes or guardados is None:
+        return None
+    return round(guardados / likes, 2)

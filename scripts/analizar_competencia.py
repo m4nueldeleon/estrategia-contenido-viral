@@ -7,7 +7,7 @@
 import argparse, csv, glob, json, sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
-from lib.norma import normalizar, tasa
+from lib.norma import normalizar, tasa, indice_utilidad
 
 PISO_TASA = 300_000   # reproducciones mínimas para que una tasa signifique algo
 
@@ -51,6 +51,7 @@ def main() -> None:
         x["t_comp"] = tasa(x.get("compartidos"), x.get("reproducciones"))
         x["t_guard"] = tasa(x.get("guardados"), x.get("reproducciones"))
         x["t_com"] = tasa(x.get("comentarios"), x.get("reproducciones"))
+        x["utilidad"] = indice_utilidad(x.get("guardados"), x.get("likes"))
 
     print(f"Selección tras el tope por autor: {len(sel)} "
           f"({sum(1 for x in sel if x['red']=='instagram')} IG · "
@@ -77,6 +78,23 @@ def main() -> None:
         bloque("ECONOMÍA DE GUARDAR — convierten",
                sorted(med, key=lambda x: -(x["t_guard"] or 0))[:20], "t_guard",
                "Objetivo del bloque de guiones de guardar: > 4 % de guardados.")
+        # índice de utilidad: la métrica que premia valor, no juego
+        util = [x for x in sel if x.get("utilidad") is not None
+                and (x.get("reproducciones") or 0) >= 100_000]
+        if util:
+            print("=" * 78)
+            print("ÍNDICE DE UTILIDAD — guardados ÷ likes  (objetivo > 0.40)")
+            print("La tasa de compartido premia juegos. Esta premia lo que la gente necesita.")
+            print("Entretenimiento: 0.05-0.15 · Educadores: 0.35-1.14 · Ver references/VALOR.md\n")
+            for i, x in enumerate(sorted(util, key=lambda x: -x["utilidad"])[:20], 1):
+                marca = "  <-- VALOR" if x["utilidad"] >= 0.40 else ""
+                print(f"{i:>2}. util {x['utilidad']:>5.2f}x | @{x['autor']:<24} "
+                      f"{x.get('seguidores') or 0:>9,} seg · {x['reproducciones']:>10,} rep · "
+                      f"L{x.get('likes') or 0:>8,} G{x.get('guardados') or 0:>8,}{marca}")
+                print(f"    {x['texto'][:82]}")
+                print(f"    {x['url']}")
+            print()
+
         dual = [x for x in med if (x["t_comp"] or 0) > 2 and (x["t_guard"] or 0) > 2]
         print("=" * 78)
         print(f"PIEZAS FUERTES EN LAS DOS ECONOMÍAS: {len(dual)} de {len(med)}")
@@ -99,7 +117,7 @@ def main() -> None:
     if a.csv:
         cols = ["red", "autor", "seguidores", "fecha", "dur", "reproducciones",
                 "likes", "comentarios", "compartidos", "guardados",
-                "t_comp", "t_guard", "t_com", "texto", "url"]
+                "t_comp", "t_guard", "t_com", "utilidad", "texto", "url"]
         with open(a.csv, "w", newline="") as fh:
             wr = csv.DictWriter(fh, fieldnames=cols, extrasaction="ignore")
             wr.writeheader(); wr.writerows(sel)

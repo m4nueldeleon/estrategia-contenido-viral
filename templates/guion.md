@@ -39,6 +39,8 @@ con qué animación. Nada de adjetivos.
 
 ### Checklist antes de darlo por terminado
 
+- [ ] Enseña una sola cosa, y al terminar la persona puede hacer algo distinto
+- [ ] Incluye una prueba comprobable en menos de 30 segundos
 - [ ] El hook cabe en 4 segundos y se dice completo
 - [ ] El primer cuadro muestra la situación entera, sin saludo
 - [ ] Hay un cambio visual antes del segundo 3

@@ -12,11 +12,10 @@ documento final lleva su número al lado.
 1. **Audita tus cuentas** post por post: mediana real de reproducciones (nunca el
    promedio), likes por seguidor, umbrales de éxito y —lo que casi nadie mira—
    **qué pasó los 5 posts siguientes a cada pico.**
-2. **Investiga a tu competencia** con un filtro duro de likes, en tres capas: el
-   nicho directo, los *trends prestados* y un **barrido por industrias ajenas**
-   (limpieza, moda, finanzas, dibujo, oficios). La tercera capa es la que produce
-   los saltos de escala: en el caso que originó esta skill dio los dos formatos
-   con mejores números de todo el trabajo, y ninguno existía en el nicho.
+2. **Investiga a tu competencia** con un filtro duro de likes, en cuatro capas:
+   el nicho directo, los *trends prestados*, un **barrido por industrias ajenas**
+   (la que da los saltos de escala) y la **capa de educadores** — especialistas
+   que ganan enseñando (la que da el valor).
 3. **Separa el contenido en las dos economías** —compartir y guardar— y demuestra
    con tus propios datos que casi ningún video hace las dos cosas.
 4. **Construye N guiones** divididos en esos dos bloques y encadenados, con guion
@@ -107,6 +106,29 @@ publica otra cosa.** Medido tres veces en la misma cuenta:
 
 `analizar_cuenta.py` lo detecta solo y lo marca. Los diez antipatrones restantes
 están en [`references/ANTIPATRONES.md`](references/ANTIPATRONES.md).
+
+## Valor antes que mecanismo
+
+Buscar formatos por su **mecanismo de viralidad** lleva sistemáticamente a
+formatos vacíos: las tasas de compartido más altas las producen juegos que no
+enseñan nada. Y eso trae seguidores que vinieron por el juego, no por el producto.
+
+Por eso la skill calcula una tercera métrica, el **índice de utilidad**:
+
+```
+índice de utilidad = guardados ÷ likes
+```
+
+Si la gente guarda más de lo que le gusta, es porque lo necesita.
+
+| Pool | Índice típico | Caso extremo |
+|---|---|---|
+| Entretenimiento | 0.05× – 0.15× | 9.25 % de compartido con índice **0.09×** |
+| **Educadores** | **0.35× – 1.14×** | índice **1.14×** con 6,013 seguidores |
+
+Un video con 8,000 reproducciones e índice 0.60× vale más para el negocio que uno
+de 200,000 con índice 0.08×. Método completo en
+[`references/VALOR.md`](references/VALOR.md).
 
 ## Los dos formatos con mejores números medidos
 

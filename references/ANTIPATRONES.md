@@ -105,7 +105,23 @@ desaprovecha el coprotagonista que sí tiene el producto.
 producto?* Ese lugar es el segundo personaje. Tabla por modelo de negocio en
 `FORMATOS-PORTABLES.md`.
 
-## 11 · Repetir guiones que ya existen
+## 11 · Elegir formatos por su mecanismo de viralidad
+
+Las tasas de compartido más altas las producen **juegos** que no enseñan nada:
+«¿qué prefieres?», ASMR de limpieza, transiciones. Optimizar por esa métrica
+lleva sistemáticamente a contenido vacío.
+
+El coste no aparece en las métricas: trae seguidores que vinieron por el juego,
+no por el producto. Para una marca cuyo producto es la expertise de alguien, eso
+construye una audiencia grande que no compra.
+
+Medido en el caso Anyara: @rsvmreddit tiene 9.25 % de compartido y un índice de
+utilidad de **0.09×**. @lemmegetfitagain tiene **1.14×** con 6,013 seguidores.
+
+**Solución:** calcular también el **índice de utilidad** (`guardados ÷ likes`) e
+investigar la capa de educadores. Ver `VALOR.md`.
+
+## 12 · Repetir guiones que ya existen
 
 Antes de escribir, listar los títulos de las tandas anteriores y verificar uno
 por uno. En el caso Anyara había 40 guiones previos grabados: los 20 nuevos se

@@ -108,12 +108,19 @@ Tres capas, siempre las tres:
 3. **Barrido por industrias** (`--buscar-industrias`) — limpieza, moda, belleza,
    finanzas personales, dibujo, música, oficios de mostrador, comida. *Esta es la
    capa que produce los saltos de escala.*
+4. **Educadores** (`--buscar-educadores`) — especialistas que ganan enseñando:
+   fisioterapeutas, médicos de la especialidad, divulgadores. *Esta es la capa
+   que produce el valor.* **Sin ella la tanda sale vacía.** Leer
+   [`references/VALOR.md`](references/VALOR.md) antes de usarla.
 
-La tercera no es opcional. En el caso Anyara dio los dos formatos con mejores
-números de todo el trabajo — «¿Qué prefieres?» (9.25 % de compartido, 1.817 % de
-comentarios) y «Día 1 de 30» (6.69 % de guardado) — y **ninguno de los dos
-aparecía en las 511 piezas del propio nicho.** Sin esta capa solo se replica el
-techo del nicho.
+La tercera y la cuarta no son opcionales, y hacen cosas distintas:
+
+- La **tercera** da alcance. En el caso Anyara produjo «¿Qué prefieres?» (9.25 %
+  de compartido) y «Día 1 de 30» (6.69 % de guardado), ninguno presente en las
+  511 piezas del propio nicho.
+- La **cuarta** da valor. Sin ella la tanda sale llena de juegos que no enseñan
+  nada, y eso construye una audiencia que no compra. Es el error que hubo que
+  corregir en ese mismo caso: ver [`references/VALOR.md`](references/VALOR.md).
 
 **Filtro duro:** solo piezas por encima del umbral de likes acordado (10,000 por
 omisión). **Tope por autor:** máximo 2 por cuenta en TikTok y 4 en Instagram,
@@ -125,6 +132,10 @@ para que la muestra no la domine un solo creador.
 
 Este es el análisis que convierte el scrape en estrategia. Leer
 `references/DOS-ECONOMIAS.md` **completo** antes de seguir.
+
+Y `references/VALOR.md`, que añade la tercera métrica: el **índice de utilidad**
+(`guardados ÷ likes`). La tasa de compartido premia juegos; el índice de utilidad
+premia lo que la gente necesita. **Calcular las tres, siempre.**
 
 Resumen: calcular para cada pieza `compartidos ÷ reproducciones` y
 `guardados ÷ reproducciones`. Aparecen dos grupos que casi no se tocan. Casi
@@ -147,7 +158,12 @@ Cada guion lleva, sin excepción:
 - **Referencias** — 2 o 3, con sus métricas y qué copiar exactamente de cada una
 - **Edición** — lo que el editor necesita y nada más
 
-Reglas de construcción en `references/METODOLOGIA.md` §5.
+**Y la prueba que manda sobre todas:** si al terminar el video la persona no
+puede hacer algo distinto, el guion no está terminado. Un guion que solo
+entretiene puede tener buenos números y no construir nada.
+
+Reglas de construcción en `references/METODOLOGIA.md` §5, estructura de cinco
+partes y criterio de valor en `references/VALOR.md`.
 Plantilla en `templates/guion.md`.
 
 ---

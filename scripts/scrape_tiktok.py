@@ -45,6 +45,24 @@ INDUSTRIAS = [
     "adivina el precio",
 ]
 
+# Capa de educadores: especialistas que ganan ENSEÑANDO. Es la que produce el
+# valor; sin ella la tanda sale llena de juegos que no enseñan nada.
+# Sustituye el tema por el tuyo. Ver references/VALOR.md
+EDUCADORES = [
+    "fisioterapeuta explica por que te duele",
+    "por que no siento el musculo al entrenar",
+    "biomecanica explicada simple",
+    "mito del ejercicio desmentido",
+    "test casero para saber si tengo",
+    "cuanto tarda realmente en verse",
+    "no es desgaste es",
+    "suelo pelvico fisioterapeuta",
+    "entrenar segun tu ciclo menstrual",
+    "menopausia y entrenamiento de fuerza",
+    "respiracion diafragmatica como se hace",
+    "3 errores que cometes al",
+]
+
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__,
@@ -57,6 +75,8 @@ def main() -> None:
                     help="añade el set de trends prestados")
     ap.add_argument("--buscar-industrias", action="store_true",
                     help="añade el barrido por industrias ajenas (la capa que da los saltos de escala)")
+    ap.add_argument("--buscar-educadores", action="store_true",
+                    help="añade la capa de especialistas que enseñan (la capa que da el valor)")
     ap.add_argument("--limite", type=int, default=40, help="resultados por fuente")
     ap.add_argument("--pais", default="MX", help="código de proxy, ej. MX, ES, US")
     ap.add_argument("--salida", default="out")
@@ -78,6 +98,8 @@ def main() -> None:
         queries += TRENDS
     if a.buscar_industrias:
         queries += INDUSTRIAS
+    if a.buscar_educadores:
+        queries += EDUCADORES
     if perfiles:
         entrada["profiles"] = perfiles
     if hashtags:
@@ -85,7 +107,7 @@ def main() -> None:
     if queries:
         entrada["searchQueries"] = queries
     if not (perfiles or hashtags or queries):
-        ap.error("hace falta --perfiles, --hashtags, --buscar-nicho, --buscar-trends o --buscar-industrias")
+        ap.error("hace falta --perfiles, --hashtags, --buscar-nicho, --buscar-trends, --buscar-industrias o --buscar-educadores")
 
     tok = token()
     gastado, limite = gasto_mensual(tok)
