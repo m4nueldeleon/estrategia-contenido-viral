@@ -35,6 +35,51 @@ Verificados en el caso Anyara. Los números son del 18-sep-2026.
 | **Expectativa vs realidad** | Genérico | 18,800,000 rep | Dos planos, el segundo desmiente al primero | Universal |
 | **Confirma en los comentarios** | Genérico | 194,700 likes | Lista de verdades incómodas, contador, confesión propia al final | Universal |
 
+### Los dos formatos con mejores números medidos
+
+Salieron del barrido de 318 piezas fuera del fitness (caso Anyara, 18-sep-2026).
+Los dos son industria-agnósticos y los dos estaban ausentes del nicho.
+
+#### «¿Qué prefieres?» — el techo de compartidos y de comentarios
+
+| Cuenta | Seguidores | Reproducciones | Tasa compartido | Tasa comentarios |
+|---|---|---|---|---|
+| @rsvmreddit | 11,500 | 3,900,000 | **9.25 %** | 0.128 % |
+| @cocoo.mx | 93,000 | 1,600,000 | 8.53 % | 0.478 % |
+| @queprefieres.of | 529,300 | 3,500,000 | 8.36 % | 0.497 % |
+| @queprefieres.of | 529,300 | 885,900 | 4.48 % | **1.817 %** |
+| @elclubdeelegir | 16,300 | 3,200,000 | 5.22 % | 0.108 % |
+| @versus.tik | 1,300,000 | 6,000,000 | 0.97 % | **1.040 % · 62,400 comentarios** |
+
+No es un video, es un género con cuentas enteras viviendo de él. **Si el hueco de
+una cuenta son los comentarios, este es el formato**: 1.817 % contra el 0.003 %
+que sacó el mejor video de la cuenta del caso.
+
+Reglas que salen de las piezas medidas:
+- Tema acotado rinde más que genérico (@elclubdeelegir: «comidas polémicas»)
+- Barra de tiempo por pregunta — el límite es lo que obliga a contestar
+- La última pregunta sin barra, más lenta, y contestada por quien presenta
+- Congelado final con todas las preguntas: es el cuadro que se captura y se manda
+
+#### «Día 1 de 30» — el techo de guardados, indiferente al tema
+
+| Cuenta | Industria | Seguidores | Reproducciones | Tasa guardado |
+|---|---|---|---|---|
+| @migueelazcano | Disciplina | 188,400 | 876,800 | **6.69 %** |
+| @papermonsters | Dibujo | 293,100 | 1,100,000 | **5.90 %** |
+| @natyglossgym | Fitness | 61,800 | 891,300 | 5.16 % |
+| @guitarraamorosa | Guitarra | 613,400 | 1,300,000 | 3.37 % |
+| @bellawhc9yj | Fitness | **4,331** | 649,000 | 3.29 % |
+
+El de disciplina supera al de fitness y el de dibujo también. **Lo que produce el
+guardado no es el tema: es la promesa de una serie que empieza hoy y termina en
+una fecha.** El día 2 de @el.crespofitness hizo 2,800,000 con 6,261 seguidores:
+la serie no decae, acumula.
+
+Reglas: barra de progreso siempre visible; mismo encuadre, ropa y música todos los
+días; escribir las N entregas antes de publicar la primera; incluir el día de la
+mitad (donde la gente abandona) y nombrarlo en vez de animar.
+
 ## Dónde buscar formatos nuevos
 
 Búsquedas en TikTok, fuera del nicho, ordenadas por compartidos:

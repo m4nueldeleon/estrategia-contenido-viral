@@ -100,12 +100,20 @@ python3 scripts/scrape_instagram.py --perfiles <lista> --hashtags <lista> --sali
 python3 scripts/analizar_competencia.py --datos out/ --min-likes 10000
 ```
 
-Dos capas, siempre las dos:
+Tres capas, siempre las tres:
 
 1. **Nicho directo** — quién hace lo mismo y le funciona.
-2. **Trends prestados** — formatos de otros sectores (comedia, pareja, moda,
-   amistad, escuela, viajes) que se puedan traer al nicho. *Esta capa es la que
-   produce los saltos de escala.* Sin ella solo se replica el techo del nicho.
+2. **Trends prestados** — formatos virales de otros sectores (comedia, pareja,
+   amistad, escuela, viajes) que se puedan traer al nicho.
+3. **Barrido por industrias** (`--buscar-industrias`) — limpieza, moda, belleza,
+   finanzas personales, dibujo, música, oficios de mostrador, comida. *Esta es la
+   capa que produce los saltos de escala.*
+
+La tercera no es opcional. En el caso Anyara dio los dos formatos con mejores
+números de todo el trabajo — «¿Qué prefieres?» (9.25 % de compartido, 1.817 % de
+comentarios) y «Día 1 de 30» (6.69 % de guardado) — y **ninguno de los dos
+aparecía en las 511 piezas del propio nicho.** Sin esta capa solo se replica el
+techo del nicho.
 
 **Filtro duro:** solo piezas por encima del umbral de likes acordado (10,000 por
 omisión). **Tope por autor:** máximo 2 por cuenta en TikTok y 4 en Instagram,

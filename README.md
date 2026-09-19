@@ -12,9 +12,11 @@ documento final lleva su número al lado.
 1. **Audita tus cuentas** post por post: mediana real de reproducciones (nunca el
    promedio), likes por seguidor, umbrales de éxito y —lo que casi nadie mira—
    **qué pasó los 5 posts siguientes a cada pico.**
-2. **Investiga a tu competencia** con un filtro duro de likes, en dos capas: el
-   nicho directo y los *formatos prestados* de otros sectores que se puedan traer
-   al tuyo. Esta segunda capa es la que produce los saltos de escala.
+2. **Investiga a tu competencia** con un filtro duro de likes, en tres capas: el
+   nicho directo, los *trends prestados* y un **barrido por industrias ajenas**
+   (limpieza, moda, finanzas, dibujo, oficios). La tercera capa es la que produce
+   los saltos de escala: en el caso que originó esta skill dio los dos formatos
+   con mejores números de todo el trabajo, y ninguno existía en el nicho.
 3. **Separa el contenido en las dos economías** —compartir y guardar— y demuestra
    con tus propios datos que casi ningún video hace las dos cosas.
 4. **Construye N guiones** divididos en esos dos bloques y encadenados, con guion
@@ -105,6 +107,20 @@ publica otra cosa.** Medido tres veces en la misma cuenta:
 
 `analizar_cuenta.py` lo detecta solo y lo marca. Los diez antipatrones restantes
 están en [`references/ANTIPATRONES.md`](references/ANTIPATRONES.md).
+
+## Los dos formatos con mejores números medidos
+
+Del barrido por industrias, sobre 318 piezas fuera del nicho:
+
+| Formato | Viene de | Mejor número | Para qué sirve |
+|---|---|---|---|
+| **¿Qué prefieres?** | entretenimiento, comida | **9.25 % de compartido · 1.817 % de comentarios** | Cuentas cuyo hueco es la conversación |
+| **Día 1 de 30** | dibujo, guitarra, disciplina | **6.69 % de guardado** | Cuentas cuyo hueco es la conversión |
+
+El «Día 1 de 30» de disciplina supera al de fitness, y el de dibujo también: lo
+que produce el guardado no es el tema, es la promesa de una serie que empieza hoy
+y termina en una fecha. Detalle y reglas de ejecución en
+[`references/FORMATOS-PORTABLES.md`](references/FORMATOS-PORTABLES.md).
 
 ## Porta el mecanismo, no el reparto
 

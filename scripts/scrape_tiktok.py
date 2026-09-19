@@ -25,6 +25,26 @@ TRENDS = [
     "adivina trend",
 ]
 
+# Barrido por industrias ajenas: de aquí salieron los dos formatos con mejores
+# números del caso Anyara. Ver references/FORMATOS-PORTABLES.md
+INDUSTRIAS = [
+    "que prefieres",                  # entretenimiento — 9.25 % de compartido
+    "elige uno",
+    "dia 1 de 30 dias reto",          # dibujo/guitarra/disciplina — 6.69 % guardado
+    "asmr limpieza satisfactorio",    # cleantok — 30.3 M de reproducciones
+    "restock organiza conmigo",
+    "caro vs barato cual es mejor",   # bebidas/compras
+    "trucos para ahorrar dinero",     # finanzas personales
+    "rutina de skincare orden correcto",
+    "probando productos virales de tiktok",
+    "tipos de clientes",              # oficios de mostrador
+    "3 errores que cometes",
+    "cosas antes de dormir",
+    "outfit transicion",
+    "me converti en por un dia",
+    "adivina el precio",
+]
+
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__,
@@ -35,6 +55,8 @@ def main() -> None:
                     help="búsquedas del nicho separadas por ';'")
     ap.add_argument("--buscar-trends", action="store_true",
                     help="añade el set de trends prestados")
+    ap.add_argument("--buscar-industrias", action="store_true",
+                    help="añade el barrido por industrias ajenas (la capa que da los saltos de escala)")
     ap.add_argument("--limite", type=int, default=40, help="resultados por fuente")
     ap.add_argument("--pais", default="MX", help="código de proxy, ej. MX, ES, US")
     ap.add_argument("--salida", default="out")
@@ -54,6 +76,8 @@ def main() -> None:
     queries = [q.strip() for q in a.buscar_nicho.split(";") if q.strip()]
     if a.buscar_trends:
         queries += TRENDS
+    if a.buscar_industrias:
+        queries += INDUSTRIAS
     if perfiles:
         entrada["profiles"] = perfiles
     if hashtags:
@@ -61,7 +85,7 @@ def main() -> None:
     if queries:
         entrada["searchQueries"] = queries
     if not (perfiles or hashtags or queries):
-        ap.error("hace falta --perfiles, --hashtags, --buscar-nicho o --buscar-trends")
+        ap.error("hace falta --perfiles, --hashtags, --buscar-nicho, --buscar-trends o --buscar-industrias")
 
     tok = token()
     gastado, limite = gasto_mensual(tok)
