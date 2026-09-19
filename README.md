@@ -103,8 +103,21 @@ publica otra cosa.** Medido tres veces en la misma cuenta:
 | 240,341 | 9,781 | −96 % |
 | 174,900 | 9,659 | −94 % |
 
-`analizar_cuenta.py` lo detecta solo y lo marca. Los nueve antipatrones restantes
+`analizar_cuenta.py` lo detecta solo y lo marca. Los diez antipatrones restantes
 están en [`references/ANTIPATRONES.md`](references/ANTIPATRONES.md).
+
+## Porta el mecanismo, no el reparto
+
+Al traer un formato de otro sector, lo que se copia es **por qué funciona**, no
+**quién sale en pantalla**. «¿Quién es más probable?» funciona por el reconocimiento
+entre dos roles, no porque haya dos amigas: una sola persona en split lo cumple igual.
+
+La pregunta que lo resuelve: **¿dónde está el cliente cuando usa el producto?** Ese
+lugar es el segundo personaje. Para una app, la sala del usuario y la pantalla con el
+producto corriendo; para un local, un cliente real y el espacio. Equivocarse ahí
+comunica un negocio que no existe y mete coordinación de terceros justo donde frena
+la producción. Tabla por modelo de negocio en
+[`references/FORMATOS-PORTABLES.md`](references/FORMATOS-PORTABLES.md).
 
 ## Licencia
 

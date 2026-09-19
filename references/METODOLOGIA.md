@@ -45,6 +45,8 @@ actualizado con lo nuevo.
 - [ ] Hay un cambio visual antes del segundo 3
 - [ ] Se entiende con el sonido apagado
 - [ ] Dice a quién le habla, y es a un cliente salvo que se decida lo contrario
+- [ ] **El segundo personaje sale del modelo de negocio**, no del reparto del trend original
+- [ ] Si necesita coordinar a otra persona, existe una razón para ello y está escrita
 - [ ] Tiene 2 o 3 referencias con números verificados y qué copiar de cada una
 - [ ] Cierra con una pregunta contestable en cinco palabras o menos
 - [ ] El caption lleva la rutina completa escrita, si es de guardar

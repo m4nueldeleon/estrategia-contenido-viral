@@ -90,7 +90,22 @@ no se graba.
 **Solución:** dos o tres referencias por guion, con su número y con qué copiar
 exactamente de cada una.
 
-## 10 · Repetir guiones que ya existen
+## 10 · Portar el reparto de un trend en vez de su mecanismo
+
+Copiar cuántas personas salen en pantalla en lugar de copiar por qué funciona.
+En el caso Anyara, 6 de 20 guiones metían a una alumna en cámara porque los
+trends originales tenían dos personas — cuando Anyara es una app y su cliente
+está sola en su sala.
+
+Tres costes a la vez: comunica un local físico que no existe, mete coordinación
+de terceros en la producción (que es exactamente lo que frena que se grabe), y
+desaprovecha el coprotagonista que sí tiene el producto.
+
+**Solución:** antes de escribir, contestar *¿dónde está el cliente cuando usa el
+producto?* Ese lugar es el segundo personaje. Tabla por modelo de negocio en
+`FORMATOS-PORTABLES.md`.
+
+## 11 · Repetir guiones que ya existen
 
 Antes de escribir, listar los títulos de las tandas anteriores y verificar uno
 por uno. En el caso Anyara había 40 guiones previos grabados: los 20 nuevos se

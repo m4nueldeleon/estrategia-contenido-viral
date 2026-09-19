@@ -48,6 +48,44 @@ Búsquedas en TikTok, fuera del nicho, ordenadas por compartidos:
 Cruzar cada resultado con las tres pruebas de arriba. Un formato que pasa las
 tres se documenta aquí con su número, para que la siguiente marca lo herede.
 
+## Portar el mecanismo, no el reparto
+
+**El error más fácil de cometer, y el más caro.** Un formato tiene dos capas: el
+*mecanismo* (por qué funciona) y el *reparto* (quién sale en pantalla). Se porta
+el mecanismo. El reparto se rediseña desde el modelo de negocio.
+
+Ejemplos del caso Anyara, donde se cometió el error y hubo que corregirlo:
+
+| Formato | Reparto original | Mecanismo real | Reparto correcto para una app |
+|---|---|---|---|
+| ¿Quién es más probable? | dos amigas | reconocimiento mutuo entre **dos roles** | ella en split: la que graba la clase / la que la hace |
+| Boyfriend check | seis novios | revisión rápida de **seis versiones de una categoría** | seis rincones de su casa donde cabe un tapete |
+| Duelo lado a lado | madre e hija | **aguante sostenido contra un rival** | ella sola contra las interrupciones de su casa |
+| Cómo la veo / cómo me ve | dos amigas | **dos miradas sobre el mismo hecho** | la pantalla con la clase / ella en el tapete |
+
+Ninguno de los mecanismos exige dos cuerpos en cuadro.
+
+### La pregunta que hay que hacerse antes de escribir
+
+**¿Dónde está el cliente cuando usa el producto?** Ese lugar, y lo que hay en él,
+es el segundo personaje.
+
+| Modelo de negocio | Segundo personaje natural | Segundo personaje equivocado |
+|---|---|---|
+| App o plataforma digital | la sala del usuario, la pantalla con el producto corriendo, los mensajes que llegan | un cliente en cámara: comunica local físico |
+| Estudio, local o consultorio | un cliente real, el espacio, el equipo | solo la persona: desaprovecha el local |
+| Producto físico | el producto en uso, el desempaquetado, el antes y después | una demostración sin contexto |
+| Servicio B2B | la pantalla compartida, el documento, el chat del cliente | actores haciendo de ejecutivos |
+
+### Por qué esto además abarata la producción
+
+En entrenamiento en casa, los creadores que revientan **filman solos**:
+@blissfitpilates 3,200,000 reproducciones con 2,399 seguidores, @fitbbyd
+2,100,000 con 5,156, @delphinefit 6,100,000 con 37,400. Coordinar a otra persona
+es justo lo que una cuenta chica no puede hacer, y aun así explotan. Si tu reparto
+necesita coordinar a alguien, casi siempre hay una versión del mismo mecanismo que
+no lo necesita — y esa versión se graba.
+
 ## Advertencia
 
 Un formato prestado **se edita como el original, no como la marca**. Si le pones

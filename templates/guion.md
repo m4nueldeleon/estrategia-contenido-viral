@@ -44,6 +44,8 @@ con qué animación. Nada de adjetivos.
 - [ ] Hay un cambio visual antes del segundo 3
 - [ ] Se entiende con el sonido apagado
 - [ ] Le habla a un cliente, no a un colega (salvo que se decidiera lo contrario)
+- [ ] El segundo personaje sale del modelo de negocio, no del reparto del trend original
+- [ ] Si necesita coordinar a otra persona, hay una razón escrita para ello
 - [ ] Tiene 2 o 3 referencias con números verificados
 - [ ] Cierra con una pregunta contestable en cinco palabras
 - [ ] No se solapa con ningún guion de tandas anteriores
