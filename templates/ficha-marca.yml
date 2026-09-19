@@ -1,0 +1,51 @@
+# Ficha de marca — el input del sistema. Se rellena una vez por marca.
+marca: Anyara
+producto: App de entrenamiento en casa · pilates, barre y sculpt
+cliente: Mujer de 25 a 45 que quiere entrenar en su casa sin gimnasio
+mercado: México y Latam, español
+idioma: es
+
+cuentas:
+  - handle: anyaramove
+    red: instagram
+    papel: marca          # marca | personal
+    objetivo: conversion  # alcance | conversion
+  - handle: mariana.dlrz
+    red: instagram
+    papel: personal
+    objetivo: alcance
+  - handle: marianabarreypilates
+    red: tiktok
+    papel: personal
+    objetivo: alcance
+
+# Corte de la tanda anterior, para comparar medianas
+corte_anterior: "2026-09-07"
+
+# Títulos de guiones que ya existen y NO se pueden repetir
+guiones_previos: casos/anyara-2026-09-guiones-previos.txt
+
+competencia:
+  nicho:
+    - pilates en casa rutina
+    - barre workout en casa
+    - wall pilates reto
+  perfiles_instagram: [sharolnario, adri.fisio.fitness, susanayabar, carmenn.cs]
+  hashtags: [pilatesencasa, wallpilates, barreworkout, entrenaencasa]
+  min_likes: 10000
+
+produccion:
+  editor_disponible: true       # false -> formatos que se editan en CapCut en 20 min
+  personas_en_camara: [Mariana, alumna]
+  dias_de_grabacion: 2
+
+tono:
+  opinion_fuerte: true
+  humor: true
+  vulnerabilidad: false
+  limite: "No mencionar competidores por nombre"
+
+entrega:
+  numero_de_guiones: 20
+  reparto: "10 cruzados + 5 exclusivos por cuenta"
+  objetivo: engagement          # alcance | conversion | engagement
