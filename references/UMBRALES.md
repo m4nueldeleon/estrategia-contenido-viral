@@ -17,6 +17,12 @@ Sobre la **mediana de reproducciones** de la cuenta, con los últimos 40–80 po
 
 `scripts/analizar_cuenta.py` los calcula e imprime la tabla lista para el documento.
 
+**Antes de leer la mediana, limpia la muestra** (lecciones del 3-sep y 15-oct-2026): quita
+los posts fijados —suelen ser virales viejos e inflan la mediana y el engagement— y, en
+Instagram, las variantes casi idénticas de un mismo video (pruebas tipo *trial reels*), que
+la hunden. `analizar_cuenta.py` todavía no los filtra: revisa el top y la lista antes de
+copiar la tabla al documento.
+
 ## Las tres tasas
 
 Se vigilan siempre, y pesan más que las reproducciones.
@@ -38,6 +44,14 @@ Cada lunes:
 
 Sin este paso, la regla de repetición no se cumple. Está documentado que se
 incumple sola: ver `ANTIPATRONES.md` §1.
+
+## Cuándo se lee una pieza y qué se hace con la viral (20-oct-2026)
+
+- Cada pieza se lee a las **48 horas** y a los **7 días**. Antes de 48 h es temprano.
+- **Además de la secuela, la viral se recicla:** se regraba con el mismo guion, en otro
+  lugar, 2 a 4 semanas después. Nunca se resube idéntica: en Instagram un repost igual
+  muere. Reciclar al ganador es práctica común en las cuentas que crecen (estudio de 10
+  cuentas de TikTok, 16-oct-2026).
 
 ## Advertencia sobre las métricas de las plataformas
 

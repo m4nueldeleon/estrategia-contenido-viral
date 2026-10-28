@@ -1,17 +1,15 @@
 ---
 name: estrategia-contenido-viral
 description: >-
-  Sistema de investigación y estrategia de contenido para cuentas de Instagram y
-  TikTok. Audita las cuentas propias con métricas post por post, investiga a la
-  competencia con un filtro duro de likes, detecta formatos portables de otros
-  sectores, separa el contenido en las dos economías (compartir vs guardar) y
-  construye N guiones listos para grabar, cada uno anclado a referencias con
-  números verificados. Entrega un Google Doc público. TRIGGERS: "estrategia de
-  contenido", "hazme N guiones", "investiga a mi competencia", "qué contenido
-  grabo", "guiones para grabar", "analiza mis redes y dame un plan", "trends que
-  pueda traer a mi nicho". NO usar para editar video (viral-short-video), para
-  carruseles (carruseles-virales-ia), ni para auditar UNA sola cuenta sin producir
-  guiones (instagram-audit).
+  Convierte métricas reales de Instagram y TikTok en N guiones listos para grabar,
+  cada uno anclado a referencias con números verificados, y los entrega en un Google
+  Doc. Audita las cuentas propias post por post, investiga la competencia con filtro
+  duro de likes, trae formatos de otros sectores y separa compartir (trae seguidores)
+  de guardar (convierte). TRIGGERS: "estrategia de contenido", "hazme N guiones",
+  "investiga a mi competencia", "qué contenido grabo", "guiones para grabar", "analiza
+  mis redes y dame un plan", "trends que pueda traer a mi nicho". NO usar para editar
+  video (viral-short-video), carruseles (carruseles-virales-ia) ni auditar una sola
+  cuenta sin guiones (instagram-audit).
 metadata:
   author: Manuel de León
   version: 1.0.0
@@ -195,6 +193,11 @@ set_drive_file_permissions(file_id=..., link_sharing="writer")
 > El archivo tiene que estar dentro de `ALLOWED_FILE_DIRS`
 > (por omisión `~/.workspace-mcp/attachments`). Si la Docs API está deshabilitada,
 > `import_to_google_doc` funciona igual: usa la conversión de Drive.
+>
+> **Para actualizar un documento ya entregado, no lo vuelvas a importar:** importar
+> otra vez con el mismo nombre crea un documento nuevo y el link que ya circula queda
+> viejo. Se reemplaza el contenido con `update_drive_file` sobre el mismo `file_id`
+> (lección del 18-sep-2026).
 
 ---
 
@@ -203,3 +206,6 @@ set_drive_file_permissions(file_id=..., link_sharing="writer")
 Guardar el caso en `casos/<marca>-<AAAA-MM>.md` con: qué se encontró, qué se
 decidió y **qué habría que revisar la próxima vez**. Ese archivo es lo que hace
 que la segunda pasada sea más barata que la primera.
+
+Si el caso cambió una regla de la skill, la regla se escribe en su archivo de
+`references/` y se anota en `LECCIONES.md` con la fecha, qué cambió y dónde.
